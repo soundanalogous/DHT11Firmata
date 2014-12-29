@@ -13,8 +13,8 @@
  * Norbert Truchsess - Original version
  */
 
-#ifndef DHT11Feature_h
-#define DHT11Feature_h
+#ifndef DHT11Firmata_h
+#define DHT11Firmata_h
 
 #include <Firmata.h>
 #include <utility/FirmataFeature.h>
@@ -23,7 +23,7 @@
 #define DHT11_PIN 0x7e
 #define RESERVED_COMMAND 0x00
 
-class DHT11Feature:
+class DHT11Firmata:
 public FirmataFeature
 {
 public:

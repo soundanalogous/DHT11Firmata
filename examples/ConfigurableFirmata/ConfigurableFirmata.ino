@@ -109,8 +109,8 @@ FirmataScheduler scheduler;
 #include <utility/EncoderFirmata.h>
 EncoderFirmata encoder;
 
-#include <DHT11Feature.h>
-DHT11Feature dht11;
+#include <DHT11Firmata.h>
+DHT11Firmata dht11;
 
 
 // dependencies. Do not comment out the following lines

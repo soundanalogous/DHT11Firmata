@@ -11,7 +11,7 @@ and a location for Firmata device libraries is decided upon.*
 
 To run this example perform the following:
 
-1. Update your core Firmata library to the `configurable` version. Clone Firmata and checkout the `configurable` branch or download one of the zip files for your verion of the Arduino IDE here: https://github.com/soundanalogous/DHT11Firmata/releases.
+1. Update your core Firmata library to the `configurable` version. Clone Firmata and checkout the [configurable branch](https://github.com/firmata/arduino/tree/configurable) or download one of the zip files for your verion of the Arduino IDE here: https://github.com/soundanalogous/DHT11Firmata/releases.
 Follow the instructions for updating Firmata here: https://github.com/firmata/arduino#updating-firmata-in-the-arduino-ide.
 2. Clone or download DHT11Firmata it into your Arduino/libraries/ directory (this is the libraries folder in your Arduino sketch directory, not the same library folder you copied Firmata into in step 1 above).
 

@@ -13,9 +13,9 @@
  * Norbert Truchsess - Original version
  */
 
-#include "DHT11Feature.h"
+#include "DHT11Firmata.h"
 
-void DHT11Feature::handleCapability(byte pin)
+void DHT11Firmata::handleCapability(byte pin)
 {
   if (IS_PIN_DIGITAL(pin)) {
     Firmata.write(DHT11_PIN);
@@ -23,7 +23,7 @@ void DHT11Feature::handleCapability(byte pin)
   }
 }
 
-boolean DHT11Feature::handlePinMode(byte pin, int mode)
+boolean DHT11Firmata::handlePinMode(byte pin, int mode)
 {
   if (mode == DHT11_PIN && IS_PIN_DIGITAL(pin)) {
     return true;
@@ -31,17 +31,17 @@ boolean DHT11Feature::handlePinMode(byte pin, int mode)
   return false;
 }
 
-boolean DHT11Feature::handleSysex(byte command, byte argc, byte* argv)
+boolean DHT11Firmata::handleSysex(byte command, byte argc, byte* argv)
 {
   return false;
 }
 
-void DHT11Feature::reset()
+void DHT11Firmata::reset()
 {
 
 }
 
-void DHT11Feature::report()
+void DHT11Firmata::report()
 {
   for (byte i=0; i<TOTAL_PINS;i++) {
     if (DHT11_PIN==Firmata.getPinMode(i)) {

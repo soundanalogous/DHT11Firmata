@@ -17,7 +17,7 @@
 #include <utility/FirmataExt.h>
 #include <utility/FirmataReporting.h>
 #include "dht11.h"
-#include "DHT11Feature.h"
+#include "DHT11Firmata.h"
 
 #include "Wire.h"
 #include "Servo.h"
